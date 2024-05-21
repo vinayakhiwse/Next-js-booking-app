@@ -1,0 +1,61 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f5f5f5;
+      }
+      .logo {
+        text-align: center;
+      }
+      .logo img {
+        max-width: 150px;
+      }
+      .content {
+        margin-top: 20px;
+      }
+      .detail {
+        margin-bottom: 10px;
+      }
+      .detail strong {
+        display: inline-block;
+        width: 120px;
+        font-weight: bold;
+      }
+      .help {
+        margin-top: 20px;
+        font-size: 12px;
+        color: #888;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">
+        <img
+          src="https://firebasestorage.googleapis.com/v0/b/hall-of-fame-4e5c6.appspot.com/o/logo.png?alt=media&token=3505a89c-cf8b-4bc3-bcfe-9df266237034"
+          alt="Logo"
+        />
+      </div>
+      <div class="content">
+        <div class="detail"><strong>Name:</strong> <%= name %></div>
+        <div class="detail"><strong>Email:</strong> <%= email %></div>
+        <div class="detail"><strong>Subject:</strong> <%= subject %></div>
+        <div class="detail"><strong>Comment:</strong> <%= comment %></div>
+      </div>
+      <div class="help">
+        For any further assistance, please contact our support team at <%=
+        footer_email %> or call us at <%= footer_phone %>.
+      </div>
+    </div>
+  </body>
+</html>

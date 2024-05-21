@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Email Verification</title>
+  </head>
+  <body>
+    <p
+      style="
+        font-size: 22px;
+        margin-bottom: 15px;
+        display: block;
+        color: #7d7d7d;
+      "
+    >
+      Hi <%= receiverName %>,
+    </p>
+
+    <span style="color: #7d7d7d; font-size: 20px; display: block"
+      >Email verification
+    </span>
+
+    <p style="font-size: 18px; line-height: 2; color: #7d7d7d">
+      To activate your
+
+      <a
+        href="http://www.padellstadium.com/"
+        style="
+          color: #20658e !important;
+
+          text-decoration: none;
+
+          font-weight: bold;
+        "
+        ><%= companyName %></a
+      >
+
+      account please use
+
+      <b style="color: #20658e !important; font-weight: bold"
+        ><%= verificationCode %></b
+      >
+
+      as your email verification code.
+    </p>
+
+    <span
+      style="
+        color: #7d7d7d;
+        font-size: 22px;
+        display: block;
+        padding: 15px 0 5px;
+      "
+      >Team <%= companyName %></span
+    >
+  </body>
+</html>
